@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 	{
-		rep();
+		function();
     }
     
-     int rep(void)
+     int function(void)
      {
      	int n;
 		printf("\n 1->Merge Sort \n 2->Selection Sort \n 3->Bubble sort \n 4->Insertion sort");
@@ -14,7 +14,6 @@ int main()
 	  	{
 	  		mergesort();
 	  	}
-	  	printf("\n")
 	  	if(n==2)
 	  	{
  		selectionsort();
@@ -64,7 +63,7 @@ int main()
 				{
 				printf("\n %d",c[k]);
 		 	   }
-		 	   rep();
+		 	   function();
 		 }
 		 	 int selectionsort()
 		 {
@@ -93,7 +92,7 @@ int main()
 	 				{
 	 					printf("\n  Descending order of the elements is %d",a[i]);
      				}
-     			rep();
+     			function();
 		}  
 		 int insertionsort()
          {	
@@ -116,13 +115,11 @@ int main()
 	 		 	a[i+1]=a[i];
 	 		 	a[position]=value;
 	 		 }
-	  
-	 		  for(i=0;i<=n;i++)
+  	 		  for(i=0;i<=n;i++)
 	  		 {
-	   
-	      		printf("\n %d",a[i]);
+	   	      		printf("\n %d",a[i]);
       		 }
-			   	rep();
+			   	function();
 			   	
       	}
       	int bubblesort()
@@ -156,5 +153,5 @@ int main()
 		   			printf("\n The Searched value is present at the position is %d",i);
 		  		 }
 	  		}
-	  		rep();
+	  		function();
 		  }
